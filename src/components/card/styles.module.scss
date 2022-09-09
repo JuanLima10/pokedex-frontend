@@ -1,0 +1,105 @@
+.card{
+    cursor: pointer;
+    width: 20rem;
+    max-width: 100%;
+
+    border-radius: 2.5rem;
+    background: var(--blue-100);
+
+    margin: 1rem;
+    padding: 1rem 2rem 4rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+    .texts{
+
+        .header{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            h1{
+                text-transform: capitalize;
+                font-weight: bold;
+                
+                color: var(--white);
+                margin: 0;
+            }
+
+            strong{
+                color: var(--white);
+            }
+        }
+
+        .bottom{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            margin: 0.8rem 0 0 0;
+
+            .stats{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.5rem;
+
+                span{
+                    font-weight: bold;
+                    
+                    background: var(--blue-50);
+                    border-radius: 3rem;
+        
+                    margin: 0;
+                    padding: 0.4rem 0.6rem;
+                }
+            }
+
+            img{
+                width: 12.5rem;
+                position: absolute;
+                margin: 0 0 0 7.5rem;
+            }
+        }
+    }
+
+    &:hover{
+        background: var(--blue-50);
+        transition: all 0.2s;
+
+        .bottom{
+
+            img{
+                transform: scale(1.1);
+                transition: all 0.4s;
+
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 385px){
+    .card{
+
+        padding: 1rem 2rem;
+
+
+        .texts{
+    
+            .bottom{
+                flex-direction: column-reverse;
+                justify-content: center;
+    
+                .stats{
+                    flex-direction: row;
+                    margin: -0.5rem 0 0 0;
+                }
+    
+                img{
+                    width: 12.5rem;
+                    position: relative;
+                    margin: -2rem 0 0 0;
+                }
+            }
+        }
+    }
+}

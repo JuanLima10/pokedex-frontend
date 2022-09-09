@@ -1,0 +1,32 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+    font-family: Roboto, sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background: gray;
+}
+::-webkit-scrollbar-thumb {
+    background: var(--gray);
+    border-radius: 10px;
+}
+
+:root {
+
+    --blue-50: #80e4cc;
+    --blue-100: #49d0b0;
+
+    --red-50: #f2abab;
+    --red-100: #f43545;
+
+    --white: #ffffff;
+    --gray: #DFDFDF;
+    --black: #000000;
+
+}

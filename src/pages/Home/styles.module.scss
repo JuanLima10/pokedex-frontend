@@ -1,0 +1,39 @@
+.home{
+    height: 922px;
+    
+
+        .pagination{
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+
+            button{
+                cursor: pointer;
+                font-size: 1rem;
+
+                border: none;
+                border-radius: 50px;
+                background: var(--red-100);
+
+                padding: 0.5rem 1rem;
+                margin: 3rem 0 0 0;
+
+                &:hover{
+                    background: var(--red-50);
+                    transition: all 0.4s;
+                }
+            }
+        }
+    
+        .pokelist{
+            max-width: 1440px;
+
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 0rem;
+        
+            margin: 1rem auto;
+        }
+    
+}
