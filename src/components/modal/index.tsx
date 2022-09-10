@@ -50,7 +50,7 @@ export function Modal({ link, children }: ModalProps) {
                                     <span>Peso: { pokemon?.weight }</span>
                                 </div>
                                 <div className={ Style.texts }>
-                                    <span>Abilidades:</span>
+                                    <span>Habilidades:</span>
                                     <i className="fa-solid fa-arrow-left"></i>
 
                                     { 
